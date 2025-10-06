@@ -1,7 +1,7 @@
 "use strict";
 
 const MISSING_IMAGE_URL = "https://tinyurl.com/tv-missing";
-const TVMAZE_API_URL = "https://api.tvmaze.com/";
+const TVMAZE_API_URL = "https://api.tvmaze.com";
 
 const $showsList = $("#showsList");
 const $episodesList = $("#episodesList");
@@ -23,7 +23,7 @@ async function getShowsByTerm(term) {
   //    Return array-of-shows promise.
   const response = await axios ({ 
     baseURL: TVMAZE_API_URL,
-    url: "search/shows",
+    url: "/search/shows",
     method: "GET",
     params: {
       q: term,
