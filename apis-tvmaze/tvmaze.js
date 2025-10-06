@@ -23,7 +23,7 @@ async function getShowsByTerm(term) {
   //    Return array-of-shows promise.
   const response = await axios ({ 
     baseURL: TVMAZE_API_URL,
-    url: "/search/shows?q=:query",
+    url: "/search/shows/",
     method: "GET",
     params: {
       q: term,
