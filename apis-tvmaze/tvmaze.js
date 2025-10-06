@@ -1,7 +1,7 @@
 "use strict";
 
 const MISSING_IMAGE_URL = "https://tinyurl.com/tv-missing";
-const TVMAZE_API_URL = "https://api.tvmaze.com";
+const TVMAZE_API_URL = "https://api.tvmaze.com/";
 
 const $showsList = $("#showsList");
 const $episodesList = $("#episodesList");
